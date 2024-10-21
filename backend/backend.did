@@ -1,0 +1,20 @@
+type Operation = 
+ variant {
+   add;
+   divide;
+   multiply;
+   subtract;
+ };
+type Calculation = 
+ record {
+   operand1: float64;
+   operand2: float64;
+   operation: Operation;
+   result: float64;
+ };
+service : {
+  calculate: (Operation, float64, float64) -> (float64);
+  getHistory: () -> (vec Calculation) query;
+  getSavedResults: () -> (vec float64) query;
+  saveResult: (float64) -> ();
+}

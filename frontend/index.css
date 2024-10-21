@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #FFD1DC;
+}
+
+.calculator {
+    background-color: #FF69B4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.display {
+    margin-bottom: 20px;
+}
+
+#result {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    background-color: #FFC0CB;
+    color: #333;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #FFC0CB;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FF91A4;
+}
+
+.operator, .equals, .clear, .save {
+    background-color: #FF1493;
+    color: white;
+}
+
+.operator:hover, .equals:hover, .clear:hover, .save:hover {
+    background-color: #FF69B4;
+}
+
+.history, .saved-results {
+    margin-top: 20px;
+    background-color: #FFC0CB;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.history h2, .saved-results h2 {
+    color: #FF1493;
+    margin-top: 0;
+}
+
+#historyList, #savedResultsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#historyList li, #savedResultsList li {
+    margin-bottom: 5px;
+    color: #333;
+}

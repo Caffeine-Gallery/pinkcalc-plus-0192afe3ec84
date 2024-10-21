@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="result" readonly>
+        </div>
+        <div class="buttons">
+            <button class="clear">C</button>
+            <button class="operator" data-op="divide">/</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator" data-op="multiply">*</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator" data-op="subtract">-</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator" data-op="add">+</button>
+            <button class="number">0</button>
+            <button class="decimal">.</button>
+            <button class="equals">=</button>
+            <button class="save">Save</button>
+        </div>
+    </div>
+    <div class="history">
+        <h2>History</h2>
+        <ul id="historyList"></ul>
+    </div>
+    <div class="saved-results">
+        <h2>Saved Results</h2>
+        <ul id="savedResultsList"></ul>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
